@@ -8,15 +8,16 @@ body {
   background: #333333;
 }
 .sidebar {
-  border-bottom: 15px;
   position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
   height: 100vh;
   width: 270px;
   background: #202020;
   z-index: 100;
   transition: all 0.5s ease;
+  margin-bottom: 0;
 }
 .sidebar.close {
   width: 35px;
@@ -71,6 +72,7 @@ body {
   padding-top: 30px;
   margin-left: -42px;
   transition: all 0.3s ease;
+  margin-bottom: 0;
 }
 .sidebar.close .nav-links {
   margin-top: -70px;
@@ -264,12 +266,10 @@ body {
   padding: 0;
 }
 .home-section .home-content .footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  display: inline;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20em;
+  white-space: nowrap;
 }
 .home-section .home-content .footer span {
   color: #fff;
@@ -277,7 +277,10 @@ body {
 }
 @media screen and (max-width: 576px) {
   .sidebar.close ~ .home-section {
-    left: 25px;
-    width: calc(100% - 25px);
+    left: 20px;
+    width: calc(100% - 20px);
+  }
+  .sidebar {
+    height: 100%;
   }
 }

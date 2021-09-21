@@ -1,4 +1,6 @@
 .home-section .home-content .jumbo {
+  display: flex;
+  justify-content: center;
   padding: 12px;
 }
 .home-section .home-content .jumbo h1 {
@@ -12,27 +14,33 @@ span,
 p {
   color: #fff;
 }
-.home-section .home-content ul {
-  margin-left: -20px;
+.home-section .home-content .row .col-md-2 {
+  display: flex;
+  justify-content: center;
 }
-.home-section .home-content ul li {
-  list-style: none;
-  color: #fff;
-  margin-top: 30px;
-  align-items: center;
-}
-.home-section .home-content ul li a {
-  margin: 15px;
-  padding: 20px;
-  padding: 10px;
+.home-section .home-content .row a {
+  display: block;
+  width: 150px;
+  padding: 5px;
   background: #202020;
-  text-decoration: none;
-  color: #fff;
-  border-radius: 10px;
+  border-radius: 20px;
   text-align: center;
+  margin-top: 20px;
 }
-.home-section .home-content ul li a i {
+.home-section .home-content .row a i {
+  color: #fff;
+}
+.home-section .home-content .row a span {
   align-items: center;
-  font-size: 22px;
-  margin-top: 10px;
+}
+@media screen and (max-width: 576px) {
+  .home-section .home-content h3,
+  p {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+  }
+  .home-section .home-content h3 {
+    display: none;
+  }
 }
