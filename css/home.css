@@ -15,15 +15,7 @@
   text-shadow: black 1px 1px 1px;
   font-size: 32px;
 }
-.home-section .home-content .row {
-  width: 100%;
-  margin-left: 1px;
-}
-.home-section .home-content .row .col {
-  display: flex;
-  justify-content: center;
-}
-.home-section .home-content .row .col div {
+.home-section .home-content .row .thumb {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,9 +23,19 @@
   font-size: 48px;
   text-shadow: 1px 1px black;
   padding: 0;
+  margin-top: 20px;
 }
-.home-section .home-content .row .col div:hover {
+.home-section .home-content .row .thumb div:hover {
   opacity: 0.8;
+}
+.home-section .home-content .row .thumb div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-section .home-content .row .thumb a {
+  text-decoration: none;
+  color: #fff;
 }
 .home-section .home-content .row .man {
   width: 250px;
@@ -67,4 +69,17 @@
 .home-section .home-content .row .col a {
   text-decoration: none;
   color: #fff;
+}
+@media screen and (max-width: 576px) {
+  .home-section .home-content .jumbo {
+    background-image: none;
+    display: inline;
+    text-align: center;
+  }
+
+  .home-section .home-content .row .col {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
 }
