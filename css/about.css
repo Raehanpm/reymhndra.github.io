@@ -1,0 +1,13 @@
+.home-section .home-content .jumbo {
+  padding: 12px;
+}
+.home-section .home-content .jumbo h1 {
+  color: #ffbb00;
+  text-transform: capitalize;
+  margin-top: 20px;
+  text-align: center;
+}
+.home-section .home-content .jumbo p {
+  color: #fff;
+  text-align: center;
+}

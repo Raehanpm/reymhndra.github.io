@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Hello, world!</title>
+
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- sidebar -->
+    <div class="sidebar close">
+        <ul class="nav-menu">
+            <li><i class='bx bx-menu'></i></li>
+        </ul>
+        <div class="logo-details">
+            <img src="/image/takeashine.png" alt="" class="logo-image mx-auto">
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class='bx bx-home'></i>
+                    <span class="link-name">Home</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link-name" href="#">Catalog</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="catalog.html">
+                        <i class='bx bxs-t-shirt'></i>
+                        <span class="link-name">Catalog</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link-name" href="#">Catalog</a></li>
+                    <li><a href="catalog.html">T-shirt</a></li>
+                    <li><a href="#">pants</a></li>
+                    <li><a href="#">Jacket</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Acessoris</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="contact.html">
+                    <i class='bx bxs-contact'></i>
+                    <span class="link-name">Contact</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link-name" href="contact.html">Contact</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-business'></i>
+                    <span class="link-name">About US</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link-name" href="#">About US</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cart'></i>
+                    <span class="link-name">cart</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link-name" href="#">Cart</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="link-name">Setting</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link-name" href="#">Setting</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
+                        <img src="/image/avatar1.png" alt="profile">
+                    </div>
+                    <div class="name-job">
+                        <div class="profile-name">Rey Mahendra</div>
+                        <div class="job">WEB Designer</div>
+                    </div>
+                    <a href="/landing.html">
+                        <i class='bx bx-log-out'></i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section ">
+        <div class="home-content container">
+            <div class=" jumbo">
+                <h1>takeashine</h1>
+                <p>Takeashine adalah sebuah brand dari bogor yang memiliki sebuah konsep yaitu, sebuah experiment budaya indonesia yang di gabungkan dengan budaya yang ada di seluruh dunia. </p>
+            </div>
+
+
+            <div class=" footer ">
+                <span>copyright takeashine 2021</span>
+            </div>
+        </div>
+    </section>
+    <!-- end of sidebar -->
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement;
+                console.log(arrowParent);
+                arrowParent.classList.toggle("showMenu");
+            });
+        }
+
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

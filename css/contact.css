@@ -1,0 +1,38 @@
+.home-section .home-content .jumbo {
+  padding: 12px;
+}
+.home-section .home-content .jumbo h1 {
+  color: #ffbb00;
+  text-transform: capitalize;
+  margin-top: 20px;
+  text-align: center;
+}
+.home-section .home-content h3,
+span,
+p {
+  color: #fff;
+}
+.home-section .home-content ul {
+  margin-left: -20px;
+}
+.home-section .home-content ul li {
+  list-style: none;
+  color: #fff;
+  margin-top: 30px;
+  align-items: center;
+}
+.home-section .home-content ul li a {
+  margin: 15px;
+  padding: 20px;
+  padding: 10px;
+  background: #202020;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+.home-section .home-content ul li a i {
+  align-items: center;
+  font-size: 22px;
+  margin-top: 10px;
+}

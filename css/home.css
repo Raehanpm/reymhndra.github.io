@@ -1,0 +1,70 @@
+.home-section .home-content .jumbo {
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+  height: 200px;
+  align-items: center;
+  background-image: url(/image/jumbo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-section .home-content .jumbo h1 {
+  color: #fff;
+  text-transform: capitalize;
+  text-shadow: black 1px 1px 1px;
+  font-size: 32px;
+}
+.home-section .home-content .row {
+  width: 100%;
+  margin-left: 1px;
+}
+.home-section .home-content .row .col {
+  display: flex;
+  justify-content: center;
+}
+.home-section .home-content .row .col div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 48px;
+  text-shadow: 1px 1px black;
+  padding: 0;
+}
+.home-section .home-content .row .col div:hover {
+  opacity: 0.8;
+}
+.home-section .home-content .row .man {
+  width: 250px;
+  height: 350px;
+  background-image: url("/image/man.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+.home-section .home-content .row .kid {
+  width: 250px;
+  height: 350px;
+  background-image: url("/image/kid.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.home-section .home-content .row .woman {
+  width: 250px;
+  height: 350px;
+  background-image: url("/image/woman.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.home-section .home-content .row .col a {
+  text-decoration: none;
+  color: #fff;
+}
